@@ -1,0 +1,218 @@
+{
+  "experiment": "binary",
+  "partition_manifest": "processed/partitions/binary/split_manifest.json",
+  "partition_manifest_sha256": "c0179c926923c3fdaddd43f2e87270e5cabc658526e69134da93b5cd2352a3b0",
+  "partition_csv_checksums_verified_before_preprocessing": true,
+  "target_column": "BinaryTarget",
+  "class_order": [
+    "Benign",
+    "Intrusion"
+  ],
+  "target_mapping": {
+    "Benign": 0,
+    "Intrusion": 1
+  },
+  "predictor_count": 78,
+  "predictor_columns": [
+    "Dst Port",
+    "Protocol",
+    "Flow Duration",
+    "Tot Fwd Pkts",
+    "Tot Bwd Pkts",
+    "TotLen Fwd Pkts",
+    "TotLen Bwd Pkts",
+    "Fwd Pkt Len Max",
+    "Fwd Pkt Len Min",
+    "Fwd Pkt Len Mean",
+    "Fwd Pkt Len Std",
+    "Bwd Pkt Len Max",
+    "Bwd Pkt Len Min",
+    "Bwd Pkt Len Mean",
+    "Bwd Pkt Len Std",
+    "Flow Byts/s",
+    "Flow Pkts/s",
+    "Flow IAT Mean",
+    "Flow IAT Std",
+    "Flow IAT Max",
+    "Flow IAT Min",
+    "Fwd IAT Tot",
+    "Fwd IAT Mean",
+    "Fwd IAT Std",
+    "Fwd IAT Max",
+    "Fwd IAT Min",
+    "Bwd IAT Tot",
+    "Bwd IAT Mean",
+    "Bwd IAT Std",
+    "Bwd IAT Max",
+    "Bwd IAT Min",
+    "Fwd PSH Flags",
+    "Bwd PSH Flags",
+    "Fwd URG Flags",
+    "Bwd URG Flags",
+    "Fwd Header Len",
+    "Bwd Header Len",
+    "Fwd Pkts/s",
+    "Bwd Pkts/s",
+    "Pkt Len Min",
+    "Pkt Len Max",
+    "Pkt Len Mean",
+    "Pkt Len Std",
+    "Pkt Len Var",
+    "FIN Flag Cnt",
+    "SYN Flag Cnt",
+    "RST Flag Cnt",
+    "PSH Flag Cnt",
+    "ACK Flag Cnt",
+    "URG Flag Cnt",
+    "CWE Flag Count",
+    "ECE Flag Cnt",
+    "Down/Up Ratio",
+    "Pkt Size Avg",
+    "Fwd Seg Size Avg",
+    "Bwd Seg Size Avg",
+    "Fwd Byts/b Avg",
+    "Fwd Pkts/b Avg",
+    "Fwd Blk Rate Avg",
+    "Bwd Byts/b Avg",
+    "Bwd Pkts/b Avg",
+    "Bwd Blk Rate Avg",
+    "Subflow Fwd Pkts",
+    "Subflow Fwd Byts",
+    "Subflow Bwd Pkts",
+    "Subflow Bwd Byts",
+    "Init Fwd Win Byts",
+    "Init Bwd Win Byts",
+    "Fwd Act Data Pkts",
+    "Fwd Seg Size Min",
+    "Active Mean",
+    "Active Std",
+    "Active Max",
+    "Active Min",
+    "Idle Mean",
+    "Idle Std",
+    "Idle Max",
+    "Idle Min"
+  ],
+  "forbidden_columns_excluded_from_X": [
+    "AttackFamilyTarget",
+    "BinaryTarget",
+    "Label",
+    "ModelClass",
+    "RowID",
+    "SourceFile"
+  ],
+  "scaler": "sklearn.preprocessing.StandardScaler(with_mean=True, with_std=True)",
+  "scaler_fit_data": "training predictors only",
+  "validation_and_test_policy": "transform only using training-fitted scaler; never used in fit",
+  "class_weight_fit_data": "training labels only",
+  "class_weights": {
+    "0": 0.564922003471037,
+    "1": 4.350774570004292
+  },
+  "class_distributions": {
+    "train": {
+      "Benign": 1866301,
+      "Intrusion": 242328
+    },
+    "validation": {
+      "Benign": 399922,
+      "Intrusion": 51927
+    },
+    "test": {
+      "Benign": 399922,
+      "Intrusion": 51928
+    }
+  },
+  "output_array_dtype": {
+    "X": "float32",
+    "y": "int64"
+  },
+  "diagnostics": {
+    "training_scaled_mean_abs_max": 3.613332784067514e-08,
+    "training_scaled_std_min": 0.0,
+    "training_scaled_std_max": 1.000000049981011
+  },
+  "artifacts": {
+    "X_train": {
+      "path": "processed/preprocessing/binary/X_train_scaled.npy",
+      "sha256": "a25f6b46e32c01fbce81c5dc0d9131fc094b87255476455404202a7dc9b4db6c",
+      "shape": [
+        2108629,
+        78
+      ],
+      "dtype": "float32"
+    },
+    "y_train": {
+      "path": "processed/preprocessing/binary/y_train.npy",
+      "sha256": "7f003d5353424e512d3fc0a3ba44534c6020c3c3d4a2db419aeb858cff8a79b5",
+      "shape": [
+        2108629
+      ],
+      "dtype": "int64"
+    },
+    "X_validation": {
+      "path": "processed/preprocessing/binary/X_validation_scaled.npy",
+      "sha256": "f10f435b715a682117e86cd3635bc69a2e4242703bb4534d6dc857699703de1b",
+      "shape": [
+        451849,
+        78
+      ],
+      "dtype": "float32"
+    },
+    "y_validation": {
+      "path": "processed/preprocessing/binary/y_validation.npy",
+      "sha256": "24776d74ccbfed38be8bea95387e6a66e492c997cbb1e00066168d911e036db4",
+      "shape": [
+        451849
+      ],
+      "dtype": "int64"
+    },
+    "X_test": {
+      "path": "processed/preprocessing/binary/X_test_scaled.npy",
+      "sha256": "246ea7c7046f6dcde8be18a1bda504486ca706125c4b07ce31be43f787bdd78c",
+      "shape": [
+        451850,
+        78
+      ],
+      "dtype": "float32"
+    },
+    "y_test": {
+      "path": "processed/preprocessing/binary/y_test.npy",
+      "sha256": "8885071973579429be6b6a4f7b35a5ccbdb47e4ea987cc577dc4c83ebd818e75",
+      "shape": [
+        451850
+      ],
+      "dtype": "int64"
+    },
+    "scaler_joblib": {
+      "path": "processed/preprocessing/binary/standard_scaler.joblib",
+      "sha256": "3add1b5972ec60d8b1232bb8806e8cd39b8052454051ba2151cfae85f6905d1d"
+    },
+    "scaler_parameters": {
+      "path": "processed/preprocessing/binary/scaler_parameters.csv",
+      "sha256": "0ae7273a80eb52cd3dc872d8042d5f070d27fa3a5fb3c211dc5e74d156135a33"
+    },
+    "predictor_order": {
+      "path": "processed/preprocessing/binary/predictor_order.csv",
+      "sha256": "2cd0837ff6cdff6d52ff8a0a64ffaff5936ff54c4662b95a36e861ad69a8efca"
+    },
+    "target_mapping": {
+      "path": "processed/preprocessing/binary/target_mapping.json",
+      "sha256": "55cc077e75249314cea601abd967387ea59f084069f7c0df6b147003b26a7dc5"
+    },
+    "class_weights": {
+      "path": "processed/preprocessing/binary/class_weights.json",
+      "sha256": "ad2ceb7a0096a17cab49880e195af70094c59dc046718cece5307c17f2923dc7"
+    }
+  },
+  "not_performed": [
+    "imputation",
+    "sampling",
+    "undersampling",
+    "oversampling",
+    "SMOTE",
+    "feature selection",
+    "ANN training",
+    "test-set model selection"
+  ]
+}

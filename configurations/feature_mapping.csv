@@ -1,0 +1,28 @@
+model_feature,external_column,match
+Flow Duration,Flow Duration,canonical_exact
+Flow IAT Mean,Flow IAT Mean,canonical_exact
+Flow IAT Std,Flow IAT Std,canonical_exact
+Flow IAT Max,Flow IAT Max,canonical_exact
+Flow IAT Min,Flow IAT Min,canonical_exact
+Fwd IAT Mean,Fwd IAT Mean,canonical_exact
+Fwd IAT Std,Fwd IAT Std,canonical_exact
+Fwd IAT Max,Fwd IAT Max,canonical_exact
+Fwd IAT Min,Fwd IAT Min,canonical_exact
+Bwd IAT Mean,Bwd IAT Mean,canonical_exact
+Bwd IAT Std,Bwd IAT Std,canonical_exact
+Bwd IAT Max,Bwd IAT Max,canonical_exact
+Bwd IAT Min,Bwd IAT Min,canonical_exact
+Fwd PSH Flags,Fwd PSH Flags,canonical_exact
+Bwd PSH Flags,Bwd PSH Flags,canonical_exact
+Fwd URG Flags,Fwd URG Flags,canonical_exact
+Bwd URG Flags,Bwd URG Flags,canonical_exact
+CWE Flag Count,CWE Flag Count,canonical_exact
+Down/Up Ratio,Down/Up Ratio,canonical_exact
+Active Mean,Active Mean,canonical_exact
+Active Std,Active Std,canonical_exact
+Active Max,Active Max,canonical_exact
+Active Min,Active Min,canonical_exact
+Idle Mean,Idle Mean,canonical_exact
+Idle Std,Idle Std,canonical_exact
+Idle Max,Idle Max,canonical_exact
+Idle Min,Idle Min,canonical_exact

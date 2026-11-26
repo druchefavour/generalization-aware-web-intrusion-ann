@@ -1,0 +1,18 @@
+{
+  "experiment": "attack_family",
+  "dropped_feature": "Protocol",
+  "predictor_count": 77,
+  "scaler_fit": "CSE-CIC-IDS2018 training partition only",
+  "classes": [
+    "Web Attack",
+    "DoS",
+    "DDoS"
+  ],
+  "class_weights": {
+    "0": 342.271186440678,
+    "1": 0.7944294734357481,
+    "2": 0.5752702721950803
+  },
+  "existing_78_feature_artifacts_modified": false,
+  "external_data_used": false
+}

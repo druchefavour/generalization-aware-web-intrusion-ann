@@ -1,0 +1,16 @@
+{
+  "experiment": "binary",
+  "dropped_feature": "Protocol",
+  "predictor_count": 77,
+  "scaler_fit": "CSE-CIC-IDS2018 training partition only",
+  "classes": [
+    "Benign",
+    "Intrusion"
+  ],
+  "class_weights": {
+    "0": 0.564922003471037,
+    "1": 4.350774570004292
+  },
+  "existing_78_feature_artifacts_modified": false,
+  "external_data_used": false
+}
