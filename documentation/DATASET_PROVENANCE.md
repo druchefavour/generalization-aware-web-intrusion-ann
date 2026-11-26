@@ -1,4 +1,3 @@
-The provenance file should let another researcher obtain the same source files, verify integrity, understand why each file was selected, and reproduce the class mappings without redistributing the large datasets. The draft below is ready to paste into documentation/DATASET_PROVENANCE.md.
 
 # Dataset Provenance
 
