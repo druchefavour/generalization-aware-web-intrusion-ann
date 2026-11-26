@@ -1,1 +1,5 @@
-
+class,raw_comparable,nonfinite_removed,duplicates_removed,final_unique
+Benign,2273097,1777,176263,2095057
+Web Attack,2180,0,37,2143
+DoS,252661,949,57967,193745
+DDoS,128027,2,11,128014

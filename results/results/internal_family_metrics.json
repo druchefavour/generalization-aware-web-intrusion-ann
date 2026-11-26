@@ -1,0 +1,98 @@
+{
+  "n_test": 51928,
+  "accuracy": 1.0,
+  "balanced_accuracy": 1.0,
+  "macro_precision": 1.0,
+  "macro_recall": 1.0,
+  "macro_f1": 1.0,
+  "weighted_precision": 1.0,
+  "weighted_recall": 1.0,
+  "weighted_f1": 1.0,
+  "multiclass_log_loss": 1.05029046111073e-06,
+  "macro_roc_auc_ovr": 1.0,
+  "weighted_roc_auc_ovr": 1.0,
+  "macro_average_precision_ovr": 1.0,
+  "weighted_average_precision_ovr": 1.0,
+  "accuracy_wilson_95_ci": [
+    0.9999260288348577,
+    1.0
+  ],
+  "prediction_seconds": 0.07011985778808594,
+  "per_class": {
+    "Web Attack": {
+      "support": 51,
+      "true_positives": 51,
+      "false_negatives": 0,
+      "false_positives": 0,
+      "true_negatives": 51877,
+      "precision": 1.0,
+      "recall_sensitivity": 1.0,
+      "specificity_one_vs_rest": 1.0,
+      "f1_score": 1.0,
+      "roc_auc_one_vs_rest": 1.0,
+      "average_precision_one_vs_rest": 1.0,
+      "recall_wilson_95_ci": [
+        0.9299533801014687,
+        1.0
+      ],
+      "precision_wilson_95_ci": [
+        0.9299533801014687,
+        1.0
+      ],
+      "specificity_wilson_95_ci": [
+        0.999925956119587,
+        0.9999999999999998
+      ]
+    },
+    "DoS": {
+      "support": 21788,
+      "true_positives": 21788,
+      "false_negatives": 0,
+      "false_positives": 0,
+      "true_negatives": 30140,
+      "precision": 1.0,
+      "recall_sensitivity": 1.0,
+      "specificity_one_vs_rest": 1.0,
+      "f1_score": 1.0,
+      "roc_auc_one_vs_rest": 1.0,
+      "average_precision_one_vs_rest": 1.0,
+      "recall_wilson_95_ci": [
+        0.9998237203208388,
+        1.0
+      ],
+      "precision_wilson_95_ci": [
+        0.9998237203208388,
+        1.0
+      ],
+      "specificity_wilson_95_ci": [
+        0.999872562399655,
+        1.0
+      ]
+    },
+    "DDoS": {
+      "support": 30089,
+      "true_positives": 30089,
+      "false_negatives": 0,
+      "false_positives": 0,
+      "true_negatives": 21839,
+      "precision": 1.0,
+      "recall_sensitivity": 1.0,
+      "specificity_one_vs_rest": 1.0,
+      "f1_score": 1.0,
+      "roc_auc_one_vs_rest": 1.0,
+      "average_precision_one_vs_rest": 1.0,
+      "recall_wilson_95_ci": [
+        0.9998723464241169,
+        0.9999999999999999
+      ],
+      "precision_wilson_95_ci": [
+        0.9998723464241169,
+        0.9999999999999999
+      ],
+      "specificity_wilson_95_ci": [
+        0.9998241319093977,
+        1.0
+      ]
+    }
+  }
+}
