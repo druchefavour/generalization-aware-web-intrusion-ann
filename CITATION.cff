@@ -1,1 +1,42 @@
-
+cff-version: 1.2.0
+message: "If you use this software, code, models, or reproducibility materials, please cite this repository and the associated article."
+title: "Generalization-Aware Neural Intrusion Detection for Web and Web-Server Traffic"
+type: software
+authors:
+  - family-names: "Ogubuike"
+    given-names: "Angus"
+    affiliation: "University of the Cumberlands"
+    email: "angus.ogubuike@ucumberlands.edu"
+repository-code: "https://github.com/druchefavour/generalization-aware-web-intrusion-ann"
+url: "https://github.com/druchefavour/generalization-aware-web-intrusion-ann"
+version: "1.0.0"
+date-released: "2026-11-25"
+license: MIT
+keywords:
+  - "artificial neural network"
+  - "web intrusion detection"
+  - "web-server security"
+  - "CSE-CIC-IDS2018"
+  - "CIC-IDS2017"
+  - "cross-dataset validation"
+  - "network intrusion detection"
+  - "dataset shift"
+abstract: >-
+  Reproducibility materials for artificial neural network experiments that
+  evaluate binary intrusion detection and attack-family classification using
+  CSE-CIC-IDS2018 for model development and CIC-IDS2017 for independent
+  cross-dataset validation. The repository includes integrity manifests,
+  dataset audit and cleaning scripts, fixed partition specifications,
+  training-only preprocessing, feature mappings, model-training and evaluation
+  scripts, environment files, and reported result artifacts.
+preferred-citation:
+  type: article
+  title: "Generalization-Aware Neural Intrusion Detection for Web and Web-Server Traffic"
+  authors:
+    - family-names: "Ogubuike"
+      given-names: "Angus"
+      affiliation: "University of the Cumberlands"
+      email: "angus.ogubuike@ucumberlands.edu"
+  journal: "Journal of Web Engineering & Technology"
+  year: 2026
+  status: "Manuscript in preparation"
