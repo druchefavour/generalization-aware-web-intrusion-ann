@@ -10,6 +10,7 @@ authors:
 repository-code: "https://github.com/druchefavour/generalization-aware-web-intrusion-ann"
 url: "https://github.com/druchefavour/generalization-aware-web-intrusion-ann"
 version: "1.0.0"
+doi: "10.5281/zenodo.24547050"
 date-released: "2026-11-25"
 license: MIT
 keywords:
