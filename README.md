@@ -39,34 +39,55 @@ This repository provides the materials needed to reproduce the study's data prep
 
 The repository does not include the large raw datasets, cleaned data files, NumPy feature arrays, packet captures, or temporary deduplication databases.
 
-### Experimental environment
+### Software and hardware environment
 
-The experiments were conducted using:
+All experiments were executed locally on a **MacBook Pro** equipped with an **Apple M2 Max system-on-chip** and **64 GB of unified memory**. The system ran **macOS Sequoia 15.8.3** on the **ARM64** architecture.
+
+Model development and evaluation used an isolated Conda environment with:
 
 - Python 3.12.16
 - TensorFlow 2.21.0
 - Keras 3.15.1
-- macOS 15.8.3 on Apple ARM64
+- NumPy
+- pandas
+- scikit-learn
+- joblib
 
-Exact dependency information is available in:
+The exact package versions and dependency graph are preserved in:
 
 - `requirements.txt`
 - `environment.yml`
 - `environment-complete.yml`
 
-To recreate the Conda environment from the portable environment definition, run:
+To recreate the portable Conda environment, run:
 
 ```bash
 conda env create -f environment.yml
 conda activate ann-web-intrusion
+```
 
+Alternatively, install the pinned Python dependencies in an isolated environment:
 
-Alternatively, create a Python environment and install the pinned packages:
-
+```bash
 python -m pip install -r requirements.txt
+```
 
+The public copy of `environment-complete.yml` should not contain a machine-specific `prefix:` entry.
 
-The environment-complete.yml file records the complete Conda environment used for the experiments. Any machine-specific prefix: entry has been removed from the public version.
+#### Recorded training times
+
+| Model | Training outcome | Recorded time |
+|---|---|---:|
+| Primary 78-feature binary ANN | 21 epochs completed; epoch-16 weights restored based on minimum validation loss | Approximately 1.90 minutes |
+| Primary 78-feature attack-family ANN | 75 epochs completed | Approximately 62 seconds |
+
+These times describe the recorded local environment and should not be interpreted as hardware-independent performance benchmarks.
+
+The complete executable environment, source scripts, model configurations, and dependency specifications are archived in the version 1.0.0 reproducibility package:
+
+- GitHub: https://github.com/druchefavour/generalization-aware-web-intrusion-ann
+- Zenodo: https://doi.org/10.5281/zenodo.24547050
+
 
 Reproduction workflow
 
@@ -154,8 +175,8 @@ Ogubuike A. Generalization-Aware Neural Intrusion Detection for Web and Web-Serv
 
 Archived reproducibility package:
 
-GitHub: [GITHUB REPOSITORY URL]
-Zenodo: [ZENODO DOI URL]
+- GitHub: https://github.com/druchefavour/generalization-aware-web-intrusion-ann
+- Zenodo: https://doi.org/10.5281/zenodo.24547050
 Version: 1.0.0
 
 A machine-readable citation is provided in CITATION.cff.
@@ -167,16 +188,3 @@ The original code and documentation in this repository are released under the MI
 The MIT License does not apply to CSE-CIC-IDS2018 or CIC-IDS2017. The source datasets remain subject to the terms established by the Canadian Institute for Cybersecurity and the University of New Brunswick.
 
 
-## Before publishing
-
-Replace these placeholders after creating the GitHub release and Zenodo archive:
-
-```text
-[GITHUB REPOSITORY URL]
-[ZENODO DOI URL]
-[Year; volume, issue, pages to be added]
-
-
-Also confirm the exact current URL for CSE-CIC-IDS2018 before publishing the README.
-
-Main writing choices: The section separates source data from your original materials, documents the exact execution order, prevents target-data leakage, provides expected results for validation, and clearly limits the MIT License to your code rather than the CIC datasets.
